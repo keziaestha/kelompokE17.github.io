@@ -1,73 +1,144 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Belajar Bahasa Rusia</title>
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">Russian Course</div>
-      <div class="header-list">
-        <ul>
-          <li>Tentang Bahasa Rusia</li>
-          <li>Pelajaran Bahasa Rusia</li>
-          <li>Kontak Kami</li>
-        </ul>
-      </div>
-    </div>
+body {
+  font-family: "Avenir Next";
+}
 
-    <div class="main">
-      <div class="copy-container">
-        <h1>Selamat datang Enthusiast Bahasa Rusia</h1>
-        <h2>Ayo belajar Bahasa Rusia</h2>
-      </div>
+li {
+  list-style: none;
+}
 
-      <div class="contents">
-        <h3 class="section-title">Daftar Pelajaran</h3>
-        <div class="contents-item">
-          <img class="img" src="https://www.softskill.asia/wp-content/uploads/2019/02/boss4-750x400.png">
-          <p>Percakapan</p>
-        </div>
-        <div class="contents-item">
-          <img class="img" src="https://www.worldofghibli.id/wp-content/uploads/2019/08/gambar-buku-png.jpg"">
-          <p>Tata Bahasa</p>
-        </div>
-        <div class="contents-item">
-          <img class="img" src="https://lh3.googleusercontent.com/proxy/UZ4H-G_bojiun0P4gNlWvv_s27Ky6o3ncljkg7VY23sMJ5nkckyjihqy-UA39FkCDffFepItVYcEATtg9S1ZawOnjYUrAsr68Fpmoy9ewsZCA0uuRx5GjoQ4pz2W0pqJdOBs5ak_bBKo0t2G0frJbTe5jlMrqQ=s0-d">
-          <p>Menulis</p>
-        </div>
-        <div class="contents-item">
-          <img class="img" src="https://4.bp.blogspot.com/-Qyoe6YzroEA/WLylQfDUnFI/AAAAAAAAAEo/XnvxshNld00mJK41u0lxbk8imSw9H1glwCLcB/s320/56c6c4d697580110e47f757834b85610_girl-listening-to-music-listening-to-radio-clipart_445-364.png">
-          <p>Mendengarkan</p>
-        </div>
-      </div>
+.header {
+  background-color: #ff5050;
+  color: #fff;
+  height: 90px;
+  width:100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
 
-      <div class="contact-form">
-        <h3 class="section-title">Daftar Sekarang</h3>
-        <p>Email (Wajib Diisi)</p>
-       <input>
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 27px 40px;
+}
 
-        <p>Nomor Telepon (Wajib Diisi)</p>
-        <textarea></textarea>
+.header-list li {
+  float: left;
+  line-height:55px;
+  padding: 0px 20px;
+  display: block;
+  transition: all 0.5s;
+  font-size: 20px;
+}
 
-        <p>Pekerjaan Saat Ini (Wajib Diisi)</p>
-        <!-- Tambahkan tag <input> -->
-        <input class="contact-submit" type="submit" value= "Kirim">
+.header-list li:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
-      </div>
-    </div>
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
 
-    <div class="footer">
-      <div class="footer-logo">Enthusiast Bahasa Rusia</div>
-      <div class="footer-list">
-        <ul>
-          <li>Tentang</li>
-          <li>Daftar Harga Belajar Bahasa Rusia</li>
-          <li>Hubungi Kami</li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+.header-right a {
+  line-height: 50px;
+  padding: 0px 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+  font-size: 22px;
+}
 
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  padding: 0px 0px;
+}
+
+.copy-container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIRQGIP2b1CPZ5RPVZg-ZHSYJF58YBRi5Utm-LEnJyFfNwrkokg&s");
+}
+
+.copy-container h1 {
+  font-size: 140px;
+  color: #33ccff;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+  color: #33ccff;
+}
+
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+  background-color:#ffcccc;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 48px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.img {
+  width:400px;
+  height:300px;
+}
+
+.contents-item p {
+  font-size: 48px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  padding-top: 100px;
+}
+
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input,textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+/* Tambahkan CSS untuk contact-submit */
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+.footer {
+  background-color: #ff5050;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 34px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 24px;
+}
