@@ -10,26 +10,57 @@ li {
   background-color: #ff5050;
   color: #fff;
   height: 90px;
+  width:100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .header-logo {
   float: left;
   font-size: 36px;
-  padding: 20px 40px;
+  padding: 27px 40px;
 }
 
 .header-list li {
   float: left;
-  padding: 33px 20px;
+  line-height:55px;
+  padding: 0px 20px;
+  display: block;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.header-list li:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
+
+.header-right a {
+  line-height: 50px;
+  padding: 0px 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+  font-size: 22px;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .main {
-  padding: 100px 80px;
+  padding: 0px 0px;
 }
 
 .copy-container {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIRQGIP2b1CPZ5RPVZg-ZHSYJF58YBRi5Utm-LEnJyFfNwrkokg&s");
 }
+
 .copy-container h1 {
   font-size: 140px;
   color: #33ccff;
@@ -40,15 +71,11 @@ li {
   color: #33ccff;
 }
 
-.copy-container span {
-  color: #ff4a4a;
-}
 
 .contents {
   height: 500px;
   margin-top: 100px;
   background-color:#ffcccc;
-
 }
 
 .section-title {
@@ -105,7 +132,7 @@ input,textarea{
 
 .footer-logo {
   float: left;
-  font-size: 32px;
+  font-size: 34px;
 }
 
 .footer-list {
@@ -113,5 +140,6 @@ input,textarea{
 }
 
 .footer-list li {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
+
