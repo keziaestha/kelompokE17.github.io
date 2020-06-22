@@ -19,13 +19,13 @@ li {
 .header-logo {
   float: left;
   font-size: 36px;
-  padding: 27px 40px;
+  padding: 27px 50px;
 }
 
 .header-list li {
   float: left;
   line-height:55px;
-  padding: 0px 20px;
+  padding: 10px 20px;
   display: block;
   transition: all 0.5s;
   font-size: 20px;
@@ -42,86 +42,101 @@ li {
 
 .header-right a {
   line-height: 50px;
-  padding: 0px 25px;
+  padding: 10px 25px;
   color: white;
   display: block;
   transition: all 0.5s;
   font-size: 22px;
 }
 
-.header-right:hover {
+.header-right a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .main {
-  padding: 20px 10px;
+  padding: 0px 0px;
 }
 
 .copy-container {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIRQGIP2b1CPZ5RPVZg-ZHSYJF58YBRi5Utm-LEnJyFfNwrkokg&s");
+  background-image: url("https://cdni.rbth.com/rbthmedia/images/2019.06/original/5d03a3f285600a486e4f7046.jpg");
+  background-size: cover;
+  height:500px;
+  width:100%;
 }
 
 .copy-container h1 {
-  font-size: 140px;
-  color: #33ccff;
-  text-align: center;
+  font-size: 90px;
+  color: white;
+  padding-top: 25px;
+  padding-left: 50px;
+  margin-bottom: 10px;
 }
 
 .copy-container h2 {
   font-size: 60px;
-  color: #33ccff;
-  text-align: center;
-}
-
-.copy-container h3 {
-  font-size: 50px;
-  color: #33ccff;
-  text-align: center;
+  color: white;
+  padding-left: 50px;
+  margin-top: 5px;
 }
 
 
 .contents {
-  height: 500px;
-  margin-top: 100px;
-  background-color:#ffcccc;
+  height: 600px;
+  margin-top: 0px;
+  margin-bottom:10px;
+  background-color:#ffffff;
 }
 
-.section-title {
-  border-bottom: 2px solid #dee7ec;
+.section-title{
+  border-bottom: 10px solid #dee7ec;
   font-size: 48px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   margin-bottom: 50px;
+  margin-top:0px;
+  padding-top: 15px;
   background-color: #ffffff;
+  text-align:center;
 }
 
 .contents-item {
   float: left;
   margin-right: 40px;
   text-align: center;
+  padding-left: 100px;
 }
 
 .img {
-  width:150px;
-  height:200px;
+  width:300px;
+  height:250px;
 }
 
 .contents-item p {
   font-size: 48px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #f1c40f
-  border-radius: 50px;
 }
 
 .contact-form {
-  padding-top: 100px;
+  margin-top:10 px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIRQGIP2b1CPZ5RPVZg-ZHSYJF58YBRi5Utm-LEnJyFfNwrkokg&s");
+
+}
+.contact-form h3{
+  text-align: left;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIRQGIP2b1CPZ5RPVZg-ZHSYJF58YBRi5Utm-LEnJyFfNwrkokg&s");
+  padding-left: 50px;
+  margin-top: 20px;
 }
 
+.contact-form p{
+  margin-left: 50px;
+}
 /* Tambahkan CSS untuk tags <input> dan <textarea> */
 input,textarea{
   width:400px;
   margin-top:10px;
   margin-bottom:30px;
+  margin-left: 50px;
   padding:20px;
   font-size:18px;
   border:1px solid #dee7ec;
@@ -131,10 +146,6 @@ input,textarea{
 .contact-submit{
   background-color:#dee7ec;
   color:#889eab;
-}
-
-.contact-submit:hover {
-  background-color: #2ecc71
 }
 
 .footer {
