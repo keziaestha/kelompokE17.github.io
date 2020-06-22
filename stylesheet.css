@@ -49,12 +49,12 @@ li {
   font-size: 22px;
 }
 
-.header-right a:hover {
+.header-right:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .main {
-  padding: 0px 0px;
+  padding: 20px 10px;
 }
 
 .copy-container {
@@ -64,11 +64,19 @@ li {
 .copy-container h1 {
   font-size: 140px;
   color: #33ccff;
+  text-align: center;
 }
 
 .copy-container h2 {
   font-size: 60px;
   color: #33ccff;
+  text-align: center;
+}
+
+.copy-container h3 {
+  font-size: 50px;
+  color: #33ccff;
+  text-align: center;
 }
 
 
@@ -93,14 +101,16 @@ li {
 }
 
 .img {
-  width:400px;
-  height:300px;
+  width:150px;
+  height:200px;
 }
 
 .contents-item p {
   font-size: 48px;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: #f1c40f
+  border-radius: 50px;
 }
 
 .contact-form {
@@ -123,6 +133,10 @@ input,textarea{
   color:#889eab;
 }
 
+.contact-submit:hover {
+  background-color: #2ecc71
+}
+
 .footer {
   background-color: #ff5050;
   color: #fff;
@@ -142,4 +156,3 @@ input,textarea{
 .footer-list li {
   padding-bottom: 24px;
 }
-
